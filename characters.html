@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Characters</title>
+    <link rel="icon" type="image/x-icon" href="Naruto-Logo.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: black
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(225, 128, 48);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #12f346;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+        .container {
+            padding: 20px;
+        }
+        .character-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-container {
+            position: relative;
+            width: 736px;
+            height: 552px;
+            overflow: hidden;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .character-section h2 {
+            color: #e67e22;
+            text-align: center;
+        }
+        .character-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+        .scroll-top-btn:hover {
+            background-color: #d35400;
+        }
+        #naruto {
+            background-color: #ffe4b5;  /* Light orange for Naruto */
+        }
+
+        #sasuke {
+            background-color: #e7e3fd;  /* Light blue for Sasuke */
+        }
+
+        #kakashi {
+            background-color: #f0f0f0;  /* Light grey for Kakashi */
+        }
+
+        #minato {
+            background-color: #fff3cd;  /* Light yellow for Minato */
+        }
+
+    </style>
+    <script>
+        function startCarousel(id) {
+            const images = document.querySelectorAll(`#${id} .carousel img`);
+            let index = 0;
+            images[index].classList.add('active');
+            setInterval(() => {
+                images[index].classList.remove('active');
+                index = (index + 1) % images.length;
+                images[index].classList.add('active');
+            }, 15000);
+        }
+
+        window.onload = () => {
+            startCarousel('naruto');
+            startCarousel('sasuke');
+            startCarousel('kakashi');
+            startCarousel('minato');
+        };
+
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#naruto">Naruto</a>
+        <a href="#sasuke">Sasuke</a>
+        <a href="#kakashi">Kakashi</a>
+        <a href="#minato">Minato</a>
+    </div>
+
+    <div class="container">
+        <section id="naruto" class="character-section">
+            <h2>Naruto Uzumaki</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="n3.jpg" alt="Naruto Image 1">
+                    <img src="n2.jpg" alt="Naruto Image 2">
+                    <img src="n5.png" alt="Naruto Image 3">
+                </div>
+            </div>
+            <p>Naruto was born on the night of October 10th to Minato Namikaze (the Fourth Hokage) and Kushina Uzumaki (the second jinchūriki of the Nine-Tails). He was named after Naruto Musasabi, the protagonist of Jiraiya's first book, which made the Sannin his godfather.The Third Hokage made special arrangements for Minato to preserve Kushina's seal containing the Nine-Tails while she gave birth to Naruto in a remote location, assisted by midwives and Anbu. A masked man, Tobi, tracked down their location, however, killed the midwives and Anbu, and captured Naruto, forcing Minato to quickly rescue him and teleport him to a safe house.
+
+                Minato and Kushina protect Naruto
+                Minato and Kushina protect Naruto from the Nine-Tails.
+                
+                With Minato gone, Tobi captured Kushina and released the Nine-Tails from her, using it to devastate Konoha. Minato saved Kushina and left Naruto in her care before he went to protect the village, eventually defeating Tobi and freeing the Nine-Tails from Tobi's control. Returning to Naruto and Kushina's location, Minato realised the only way to stop the Nine-Tails was to seal it within Naruto, believing that his son would someday need the fox's power to defeat Tobi when he returned. Since the Nine-Tails' chakra was too immense to be sealed into an infant, Minato sacrificed his soul to split the fox's chakra in half, sealing the Yin half within himself and the Yang half within Naruto. After telling Naruto how much they loved him, Minato and Kushina succumbed to their wounds from protecting their son from the Nine-Tails and passed away.
+                
+                Orphaned, and not having anyone else to provide for him, Naruto received monthly income from the village in order to afford daily necessities. Naruto grew up not knowing who his parents were, receiving only his mother's surname, as Hiruzen wanted to protect Naruto from his father's enemies. Minato's dying wish that Naruto be regarded as a hero was honoured by the very few who could put aside their pain and losses caused by the disaster, while the majority of Konoha, however having no knowledge of the circumstances surrounding his birth, openly ostracised and resented Naruto for containing the beast that devastated the village and took many lives; some even viewed Naruto as the Nine-Tails itself. Soon, the Third Hokage forbade anyone from mentioning the Nine-Tails, hoping that the younger generation would not blindly hate Naruto as their parents did. However, Naruto's peers emulated their parents' hatred of him, despite not knowing why. This social isolation caused Naruto to crave acknowledgement, which he would gain by pulling pranks.
+                
+                Naruto's first encounter with Hinata
+                Naruto meets Hinata.
+                
+                On the day of her enrolment in the Ninja Academy - Naruto first met Hinata Hyūga, who was being picked on by three bullies. Despite not knowing her, Naruto immediately came to her defence, but he was outnumbered and knocked unconscious, and the bullies damaged his red scarf. When Naruto awoke, Hinata thanked him for helping her and returned his scarf to him, but he let her keep it. He was unaware that the girl's growing affection for him began at that moment.
+                
+                Young sasuke and Naruto
+                Naruto and Sasuke in the Academy.
+                
+                In the Academy, Naruto became a student of Iruka Umino, who acted as a surrogate older brother to keep him in line and help him work harder. Naruto also met his classmate Sasuke Uchiha and tried to befriend him, since Sasuke was alone as well. Jealous of Sasuke's skills and popularity, however, he developed a one-sided rivalry in his pursuit to prove himself just as good as, if not better than, Sasuke, wishing that someday, Sasuke would accept him as an equal. Naruto also grew close with the owner of Ramen Ichiraku, Teuchi and his daughter Ayame, being welcomed as their favourite customer.</p>
+        </section>
+
+        <section id="sasuke" class="character-section">
+            <h2>Sasuke Uchiha</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="s1.jpg" alt="Sasuke Image 1">
+                    <img src="s2.jpg" alt="Sasuke Image 2">
+                    <img src="s3.jpg" alt="Sasuke Image 3">
+                </div>
+            </div>
+            <p>Sasuke is the second and youngest son of Mikoto and Fugaku Uchiha; they named him after Sasuke Sarutobi in the hopes that he would someday be just as strong of a shinobi.Sasuke grew up in the shadow of his older brother, Itachi, a natural prodigy who many in the Uchiha clan and the village would constantly compare Sasuke and any of his accomplishments to. Sasuke himself adored Itachi, never passing up an opportunity to spend time with him. Although Itachi welcomed his company, letting Sasuke watch him train and taking him on adventures into the forests,Itachi in return rarely helped Sasuke himself become a better shinobi; when asked, he would often instead poke Sasuke's forehead and promise to do so some other time. Sasuke found this annoying, but didn't allow it to blemish his high opinion of his brother.
+
+                On entering the Konoha Ninja Academy, Sasuke proved to be the standout of his class, consistently getting top grades.However, he could never meet the same milestones Itachi had set, resulting in their father paying Sasuke little attention.Aware of this neglect, Itachi, despite being increasingly busy, tried to stand in for their father by giving Sasuke the recognition he craved, at times even blackmailing Fugaku to spend time with Sasuke. As time went on, Itachi started becoming distant with and cold towards their family, culminating in a falling out with much of the Uchiha clan on their suspicion that he'd killed his best friend, Shisui Uchiha. Sasuke did not understand the reason for this, but he didn't mind the side-effect: his father began taking an interest in his development. Fugaku taught Sasuke how to perform the Great Fireball Technique, which he mastered in a week.Fugaku stated his pride in Sasuke for this accomplishment, but at the same time encouraged him not to follow in Itachi's footsteps.
+                
+                Uchiha Clan massacre
+                Itachi spares Sasuke.
+                
+                After a long day of training, Sasuke returned home one night to find the streets littered with the bodies of the Uchiha. He rushed home to notify his family of this Uchiha Clan Massacre, only to find Itachi standing over the bodies of their parents. Sasuke tried to solicit help and comfort from Itachi, who responded by using Tsukuyomi on him to torment him with visions of him murdering their family. Horrified by what Itachi had done, Sasuke pleaded for an explanation, to which Itachi replied that it was to test his own power. Fearful that he would be next, Sasuke tried to run. Itachi cornered him and explained that Sasuke, as he then was, would not be worth killing. Only by becoming stronger, such as by acquiring his own Mangekyō Sharingan, could he prove a worthwhile challenge to Itachi's abilities. Before leaving, Itachi encouraged Sasuke to hate him, to desire revenge, and to gain power from that. Sasuke immediately followed through, pursuing Itachi and using his newly-awakened Sharingan to attack him. The attack failed and Sasuke passed out, but not before glimpsing Itachi crying; Sasuke would forget this had happened for many years.
+                
+                Young sasuke and Naruto
+                Naruto and Sasuke in the Academy.
+                
+                Sasuke, now one of the last surviving Uchiha, was alone. He spent the first few days after the massacre wandering his family's compound, reflecting on the people who were now gone, killed by Itachi. Sasuke decided to do what Itachi had instructed and dedicated his life to vengeance, having no other interest than bringing about Itachi's death. He threw himself into his studies at the Academy, making no efforts to form friendships and ignoring all of the girls' attempts to gain his affection. One of his classmates, Naruto, disliked Sasuke's cool personality and the attention he received, and developed a one-sided rivalry in his pursuit to prove himself just as good as, if not better than, Sasuke. For his part, Sasuke thought little of Naruto and was usually annoyed by his outbursts, but would, at times, secretly smile at how hard Naruto worked because of him. Ironically, for all the attention he received, Naruto was the only person among his peers who understood Sasuke due to the painful experiences he had.</p>
+        </section>
+
+        <section id="kakashi" class="character-section">
+            <h2>Kakashi Hatake</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="k1.jpg" alt="Kakashi Image 1">
+                    <img src="k2.jpg" alt="Kakashi Image 2">
+                    <img src="k3.jpg" alt="Kakashi Image 3">
+                </div>
+            </div>
+            <p>Because his mother died when he was very young,Kakashi was raised during his early years by his father, Sakumo. Sakumo was famed throughout the shinobi world, having saved Konoha on at least one occasion; Kakashi in particular revered his father.       Kakashi Becomes Genin
+                Kakashi becomes a genin.
+                
+                In the Academy, Kakashi earned top grades, earning him recognition as a prodigy and the best of his generation.Ultimately, he became very popular amongst his peers. With his talents soon being recognised, at age 5, Kakashi graduated from the Academy at the top of his class in a single year. When his classmates, Rin Nohara and Obito graduated four years later, they were teamed together, with Kakashi, under the leadership of Minato Namikaze. In the anime, Minato gave the team a bell test at its formation, assigning the three to take the two bells he kept on his person. Minato often held back less against the prodigious Kakashi than with Rin and Obito so they couldn't obtain the bells without teamwork. Unfortunately, Kakashi realised this, only using Obito and Rin as a means to an end to obtain the bells. Nonetheless, Minato passed them because they accomplished the goal of the test by working as a team. Minato did encourage them to improve their teamwork afterwards, a message that Obito and Rin took to heart, but fell upon deaf ears with Kakashi.Team Minato would go on many missions during its career, but Kakashi's devotion to the rules often made him difficult to work with;Obito, already jealous of Kakashi's natural talent and popularity, was frequently at odds with him about this behaviour. At age 6, Konoha officials allowed Kakashi to compete in the Chūnin Exams with his team, which he passed by defeating Might Guy and became a chūnin.      
+                During one of Sakumo's missions - after Kakashi was promoted to chūnin Sakumo made the decision to save the lives of his teammates rather than complete the assignment. The mission's failure had disastrous consequences for the Land of Fire, causing many in Konoha, including the teammates he saved, to vilify him for abandoning his duties. Disgraced, Sakumo committed suicide. Seeing what his father went through and determined not to make the same mistakes, Kakashi decided that following the Shinobi Rules must always take priority.</p>
+        </section>
+
+        <section id="minato" class="character-section">
+            <h2>Minato Namikaze</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="m1.jpg" alt="Minato Image 1">
+                    <img src="m2.jpg" alt="Minato Image 2">
+                    <img src="m3.jpg" alt="Minato Image 3">
+                </div>
+            </div>
+            <p>Minato entered Konoha's Academy with the dream of earning the villagers' respect and recognition by becoming Hokage.When Kushina Uzumaki moved to Konoha, she was placed in the same class as Minato. Minato was immediately drawn to her bright red hair, finding it beautiful. Minato was a natural prodigy as a ninja, the likes of which appears only once in a generation. When he was added to a genin unit, Team 6, under the leadership of Jiraiya. The Sannin took a special interest in Minato and took him on as his apprentice, teaching him many of his own signature abilities.In time, Minato's exceptional skills led Jiraiya to believe he might be the Child of the Prophecy, someone who would someday save the world.
+
+                Minato saves Kushina
+                Minato rescues Kushina.
+                
+                Years later, after they graduated and became ninja, Kushina was kidnapped by Kumogakure forces. Konoha mobilised its ninja to retrieve her, but only Minato noticed the strands of red hair Kushina left behind to mark their path. Minato, acting alone, rescued her from her captors.On their way back to Konoha, Minato confessed his admiration for her hair and her strength,causing Kushina who had previously believed Minato "unreliable" and even "girly"to fall in love with him.
+                
+                The feat of single-handedly putting a stop to the Nine-Tails' abduction raised Minato's renown greatly, moving him from an ordinary shinobi to one who was well known across many nations for his great accomplishment of foiling Kumo's kidnapping attempt,both in the Land of Fire and beyond</p>
+        </section>
+    </div>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()">&#8679;</button>
+
+</body>
+</html>
